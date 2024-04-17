@@ -1,23 +1,23 @@
-import logo from "./logo.svg";
 import "./App.css";
+import { Header } from "./components/Header/header";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
+      <Header></Header>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Welcome to Mutation Academy!</p>
+        <h1>Welcome to the Mutation Academy!</h1>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://mutasyonacademy.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Start from here
         </a>
       </header>
     </div>
   );
-}
+};
 
 export default App;
