@@ -5,9 +5,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: auto;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+html {
+  overflow: auto;
+  height: 100%;
+  position: relative;
+}
+
+html::before {
+  content: "";
+  background: url("/src/images/pt-background.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6; /* Adjust the opacity for the background image */
+  z-index: -1; /* Ensure the background stays behind the content */
 }

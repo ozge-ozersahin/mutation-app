@@ -1,21 +1,14 @@
+import { urlAlphabet } from "nanoid";
 import "./App.css";
 import { Header } from "./components/Header/header";
+import { Home } from "./components/Home/home";
+
 
 const App = () => {
   return (
     <div className="App">
       <Header></Header>
-      <header className="App-header">
-        <h1>Welcome to the Mutation Academy!</h1>
-        <a
-          className="App-link"
-          href="https://mutasyonacademy.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Start from here
-        </a>
-      </header>
+      <Home></Home>
     </div>
   );
 };
