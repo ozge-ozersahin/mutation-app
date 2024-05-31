@@ -1,0 +1,40 @@
+  .header {
+    padding: 1rem;
+  }
+  
+  .header nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header nav ul li {
+    margin: 0 1rem;
+  }
+  
+  .header nav ul li a {
+    text-decoration: none;
+    color: #b8ad09;
+    font-weight: bolder;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .header nav ul {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+  
+    .header nav ul li {
+      margin: 0.5rem 0;
+    }
+  }
+  
