@@ -5,9 +5,28 @@
     justify-content: center;
     height: 100vh;
     padding: 20px;
+    color: #b8ad09;;
 }
 
-.login .chakra-input,
-.login .chakra-button {
+.login .textLogin {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.login .email,
+.login .password {
     margin-top: 10px;
+    width: 100%;
+    max-width: 300px; 
+}
+
+.login .show {
+    border-radius: 50px
+}
+
+.login p {
+    color: black;
+    font-weight: bolder;
+    margin-top: 10px;
+    font-size: 1rem;
 }
