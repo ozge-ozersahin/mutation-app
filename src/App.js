@@ -5,18 +5,6 @@ import { Login } from "./components/Login/login";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
-
-// const router = BrowserRouter([
-//   {
-//     path: "/",
-//     element: <Home />,
-//   },
-//   {
-//     path: "/login",
-//     element: <Login />,
-//   }
-// ])
-
 const About = () => <div>About Page</div>;
 
 const App = () => {
@@ -29,16 +17,6 @@ const App = () => {
       {/* <Header></Header> */}
     </Router>
 
-
-
-    // <div className="App">
-    //   <Router
-    //   <Route path="/login" element={<Login />} />
-    //   <Route path="/home" element={<Home />} />
-    //   {/* <Header></Header>
-    //   <Home></Home>
-    //   <Login></Login> */}
-    // </div>
   );
 };
 
