@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { Input, Button } from "@chakra-ui/react";
 import "./login.css";
 
@@ -9,10 +10,16 @@ export const Login = () => {
 
     const handleClick = () => setShow(!show);
 
+    const navigate = useNavigate();
+
     const handleSubmit = (event) => {
         event.preventDefault();
         console.log('Email:', email);
         console.log('Password:', password);
+        if (email === "admin" && password === "admintest") { navigate("/user"); } else {
+            alert("Invalid email or password");
+        }
+
     };
 
     return (
@@ -41,6 +48,7 @@ export const Login = () => {
                 <Button type="submit" className="loginButton" mt={4}>Login</Button>
             </form>
             <a href="#"><p>Don't have an account? Register</p></a>
+
         </div>
     );
 };

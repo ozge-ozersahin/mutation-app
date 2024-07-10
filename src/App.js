@@ -2,6 +2,7 @@ import "./App.css";
 import { Header } from "./components/Header/header";
 import { Home } from "./components/Home/home";
 import { Login } from "./components/Login/login";
+import { User } from "./components/User/user";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
@@ -13,6 +14,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/user" element={<User />} />
       </Routes>
       {/* <Header></Header> */}
     </Router>
