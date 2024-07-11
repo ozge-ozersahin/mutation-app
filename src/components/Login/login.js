@@ -19,8 +19,12 @@ export const Login = () => {
         if (email === "admin" && password === "admintest") { navigate("/user"); } else {
             alert("Invalid email or password");
         }
-
     };
+
+    const handleRegisterClick = () => {
+        navigate("/register");
+    };
+
 
     return (
         <div className="login">
@@ -47,8 +51,7 @@ export const Login = () => {
                 </div>
                 <Button type="submit" className="loginButton" mt={4}>Login</Button>
             </form>
-            <a href="#"><p>Don't have an account? Register</p></a>
-
+            <a href="#" onClick={handleRegisterClick}><p>Don't have an account? Register</p></a>
         </div>
     );
 };
