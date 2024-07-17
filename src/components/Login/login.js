@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Input, Button } from "@chakra-ui/react";
+import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import "./login.css";
 
 export const Login = () => {
@@ -46,7 +47,7 @@ export const Login = () => {
                         onChange={(e) => setPassword(e.target.value)}
                     />
                     <Button className="toggleButton" onClick={handleClick}>
-                        {show ? 'Hide' : 'Show'}
+                        {show ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
                     </Button>
                 </div>
                 <Button type="submit" className="loginButton" mt={4}>Login</Button>

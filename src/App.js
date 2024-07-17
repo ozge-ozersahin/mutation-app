@@ -1,5 +1,4 @@
 import "./App.css";
-import { Header } from "./components/Header/header";
 import { Home } from "./components/Home/home";
 import { Login } from "./components/Login/login";
 import { User } from "./components/User/user";
@@ -18,7 +17,6 @@ const App = () => {
         <Route path="/user" element={<User />} />
         <Route path="/register" element={<Register />} />
       </Routes>
-      {/* <Header></Header> */}
     </Router>
 
   );
