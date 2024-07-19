@@ -5,6 +5,9 @@ import { FaInstagram } from "react-icons/fa6";
 import { FaTiktok } from "react-icons/fa";
 import { Header } from "../Header/header";
 import "../Header/header.css";
+import logo from "../../images/brand-logo.png";
+
+
 
 export const Home = () => {
   return (
@@ -15,6 +18,7 @@ export const Home = () => {
           <span className="change">Change</span> <br />
           <span className="yourLife">Your Life</span> <br />
         </h1>
+        <img src={logo} alt="Logo" className="logo"></img>
         <div className="contact-info">
           <h2 className="contact">Contact with us</h2>
           <div className="contact-methods">
