@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Input, Button } from "@chakra-ui/react";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import "./login.css";
+import logo from "../../images/brand-logo.png";
 
 export const Login = () => {
     const [email, setEmail] = useState("");
@@ -27,8 +28,10 @@ export const Login = () => {
     };
 
 
+
     return (
         <div className="login">
+            <img src={logo} alt="Logo" className="logo"></img>
             <h1 className="textLogin">Login</h1>
             <form onSubmit={handleSubmit}>
                 <Input
