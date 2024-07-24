@@ -1,19 +1,28 @@
+
+
 .home {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
-  align-items: flex-start; 
-  height: 100vh; 
+  justify-content: space-between;
+  align-items: flex-start;
+  min-height: 100vh; 
   padding: 2rem;
+  position: relative;
+  box-sizing: border-box;
+  z-index: 1;
+  overflow: hidden;
 }
 
 
 .home h1 {
   text-decoration: none;
   font-weight: bolder;
-  font-size: 80px;
+  font-size: 6vw;
   text-transform: uppercase;
   line-height: 1.2;
+  text-align: center;
+  margin-bottom: 2rem;
+  max-width: 90%;
 }
 
 .home .change {
@@ -25,13 +34,20 @@
 }
 
 .contact-info {
-  align-self: center;
   text-align: center;
   margin-top: auto;
+  width: 100%;
+  max-width: 600px;
+  padding: 1rem;
+  box-sizing: border-box;
+  z-index: 2; 
+  background: rgba(0, 0, 0, 0.5);
+  align-self: center;
 }
 
+
 .contact {
-  font-size: 20px;
+  font-size: 1.5rem; 
   margin-bottom: 1rem;
   color: beige;
 }
@@ -39,15 +55,61 @@
 .contact-methods {
   display: flex;
   gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
 
 .contact-methods span {
-  font-size: 20px;
+  font-size: 1.5rem;
   color:  #b8ad09;
+  cursor: pointer;
+  margin-bottom: 1rem;
 }
 
-/* .logo{
-  width: 50%;
+.contact-methods span:hover {
+  color: #ffffff;
+}
+
+.logo {
+  max-width: 100%;
   height: auto;
   margin-bottom: 2rem;
-} */
+}
+
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: clamp(2rem, 8vw, 6rem); /* Adjust font size for smaller screens */
+  }
+
+  .contact {
+    font-size: 1.3rem;
+  }
+
+  .contact-methods span {
+    font-size: 1.3rem;
+  }
+
+  .logo {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .home h1 {
+    font-size: clamp(2rem, 10vw, 4rem); /* Further adjust font size for very small screens */
+  }
+
+  .contact {
+    font-size: 1.1rem;
+  }
+
+  .contact-methods span {
+    font-size: 1.1rem;
+  }
+
+  .logo {
+    width: 70vw;
+    max-width: 300px;
+  }
+}

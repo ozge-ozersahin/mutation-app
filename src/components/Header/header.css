@@ -25,8 +25,7 @@
     font-size: 15px;
     text-transform: uppercase;
   }
-  
-  /* Responsive Design */
+
   @media (max-width: 768px) {
     .header nav ul {
       flex-direction: column;
