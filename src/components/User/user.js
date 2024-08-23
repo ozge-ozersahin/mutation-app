@@ -1,10 +1,10 @@
 import React from "react";
+import CalorieCalculator from "../CalorieCalculator/calculator";
 
 
 
 export const User = () => {
     return (
-        <h1> Hello! You are in the User Page</h1>
+       <CalorieCalculator />
     )
-
 }

@@ -1,0 +1,64 @@
+.calorie-calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    color: #b8ad09;
+}
+
+.card {
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.cardHeader h1 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.calorie-calculator input,
+.calorie-calculator select {
+    margin-bottom: 1em;
+    width: 100%;
+    padding: 1em;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 0 2em hsl(231deg 62% 94%);
+    color: hsl(0deg 0% 30%);
+    outline: none;
+    font-size: 1rem;
+}
+
+.submitButton {
+    display: inline-block;
+    font-size: 14px;
+    padding: 17px 50px 16px;
+    color: #ffffff;
+    background: #b8ad09;
+    line-height: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.calorie-calculator h3 {
+    text-align: center;
+    color: hsl(0deg 0% 30%);
+}
