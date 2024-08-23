@@ -42,20 +42,22 @@ export const Login = () => {
                     onChange={(e) => setEmail(e.target.value)}
                 />
                 <div className="passwordContainer">
-                    <Input
-                        className="passwordInput"
-                        type={show ? 'text' : 'password'}
-                        placeholder='Enter password'
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                    />
-                    <Button className="toggleButton" onClick={handleClick}>
-                        {show ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
-                    </Button>
+                    <div className="inputWrapper">
+                        <Input
+                            className="passwordInput"
+                            type={show ? 'text' : 'password'}
+                            placeholder='Enter password'
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                        />
+                        <Button className="toggleButton" onClick={handleClick}>
+                            {show ? <AiOutlineEyeInvisible /> : <AiOutlineEye />}
+                        </Button>
+                    </div>
                 </div>
                 <Button type="submit" className="loginButton" mt={4}>Login</Button>
             </form>
-            <a href="#" onClick={handleRegisterClick}><p>Don't have an account? Register</p></a>
+            <a href="register" onClick={handleRegisterClick}><p>Don't have an account? Register</p></a>
         </div>
     );
 };
