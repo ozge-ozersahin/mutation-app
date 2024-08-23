@@ -38,10 +38,6 @@ export const Register = () => {
       ...formData,
       [name]: value,
     });
-
-    if (showAlert) {
-      setShowAlert(false); //hide the alert when user starts typing
-    }
   };
 
   const handleSubmit = (e) => {
@@ -67,6 +63,9 @@ export const Register = () => {
     }
 
     console.log("Form Data Submited:", formData);
+    
+    //Store the form data
+    sessionStorage.setItem('userRegistrationData', JSON.stringify(formData));
 
     // Reset form data
     setFormData({
