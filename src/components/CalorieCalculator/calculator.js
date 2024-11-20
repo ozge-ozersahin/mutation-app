@@ -67,13 +67,13 @@ const CalorieCalculator = () => {
     <div className="calorie-calculator">
       <Card className="card">
         <CardHeader className="cardHeader">
-          <h1>Calorie Calculator</h1>
+          <h1>Let's start by calculating how many calories you need daily!</h1>
         </CardHeader>
         <CardBody>
           {error && (
             <Alert status="error" borderRadius="md" mb={4}>
               <AlertIcon />
-              <p>{error}</p>
+              <h1>{error}</h1>
             </Alert>
           )}
           <Box mb={3}>
@@ -149,6 +149,14 @@ const CalorieCalculator = () => {
           )}
         </CardFooter>
       </Card>
+      <div className="switchWorkout">
+        <a href="/workoutPlan">
+            <h1>
+              Do you need workout plan?
+            </h1>
+        </a>
+      </div>
+
     </div>
   );
 };

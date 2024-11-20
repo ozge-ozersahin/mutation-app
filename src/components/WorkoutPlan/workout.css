@@ -1,0 +1,30 @@
+h1 {
+    color: #b8ad09;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    color: #a8a500;
+    display: flex;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.image {
+    width: 450px;
+    height: 300px; /* Aynı boyut için hem genişlik hem yükseklik belirleniyor */
+    object-fit: cover; /* Görüntüyü kesip, alanı tamamen doldurur */
+    border-radius: 10px;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover ve aktif geçişler */
+}
+
+.image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image:active {
+    transform: scale(1.05) rotate(5deg);
+}

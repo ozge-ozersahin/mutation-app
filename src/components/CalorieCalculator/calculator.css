@@ -62,3 +62,12 @@
     text-align: center;
     color: hsl(0deg 0% 30%);
 }
+
+.switchWorkout a {
+    text-decoration: none;
+    color: #b8ad09;
+}
+
+.switchWorkout a:hover {
+    color: #a8a500;         /* Optional: Change the color on hover */
+}

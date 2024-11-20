@@ -3,8 +3,14 @@ import CalorieCalculator from "../CalorieCalculator/calculator";
 
 
 
+
+
 export const User = () => {
     return (
-       <CalorieCalculator />
-    )
-}
+      <div>
+        <div>
+          <CalorieCalculator />
+        </div>
+      </div>
+    );
+};

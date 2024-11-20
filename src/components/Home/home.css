@@ -79,7 +79,7 @@
 
 @media (max-width: 768px) {
   .home h1 {
-    font-size: clamp(2rem, 8vw, 6rem); /* Adjust font size for smaller screens */
+    font-size: clamp(2rem, 8vw, 6rem); 
   }
 
   .contact {
@@ -97,7 +97,7 @@
 
 @media (max-width: 480px) {
   .home h1 {
-    font-size: clamp(2rem, 10vw, 4rem); /* Further adjust font size for very small screens */
+    font-size: clamp(2rem, 10vw, 4rem);
   }
 
   .contact {
