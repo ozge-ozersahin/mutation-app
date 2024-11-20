@@ -9,6 +9,7 @@ import armDumbbell from "../../images/single-arm-dumbbell-row.png"
 import lateralRaise from "../../images/lateral-raise.png"
 import cablelatPulldown from "../../images/cable-lat-pulldown.png"
 import brenchPress from "../../images/brench-press.png"
+import bandChestPress from "../../images/band-chest-press.png"
 
 
 export const Workout = () => {
@@ -43,7 +44,10 @@ export const Workout = () => {
         </a>
         <a href="https://www.youtube.com/watch?v=X3YrlBmjWrY">
             <img src={brenchPress} alt="brenchpress" className="image"></img> 
-        </a>          
+        </a>
+        <a href="https://www.youtube.com/watch?v=EbfYPZCWkB0">
+            <img src={bandChestPress} alt="bandChestPress" className="image"></img> 
+        </a>           
     </div>
    );
 };
