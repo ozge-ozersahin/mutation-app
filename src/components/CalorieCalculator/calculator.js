@@ -11,7 +11,7 @@ import {
     Box,
   } from "@chakra-ui/react";
 
-const CalorieCalculator = () => {
+export const CalorieCalculator = () => {
   const [age, setAge] = useState("");
   const [gender, setGender] = useState("");
   const [weight, setWeight] = useState("");
@@ -149,14 +149,6 @@ const CalorieCalculator = () => {
           )}
         </CardFooter>
       </Card>
-      <div className="switchWorkout">
-        <a href="/workoutPlan">
-            <h1>
-              Do you need workout plan?
-            </h1>
-        </a>
-      </div>
-
     </div>
   );
 };

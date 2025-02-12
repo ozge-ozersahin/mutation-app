@@ -1,0 +1,36 @@
+
+.user-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .user-container h1 {
+    color: #a8a500;
+    margin-bottom: 20px;
+  }
+  
+  .user-container p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .workout-btn {
+    padding: 12px 24px;
+    background-color: #a8a500;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .workout-btn:hover {
+    background-color: #b8ad09;
+  }
+  

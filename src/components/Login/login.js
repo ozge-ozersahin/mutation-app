@@ -20,7 +20,11 @@ export const Login = () => {
         event.preventDefault();
         console.log('Email:', email);
         console.log('Password:', password);
-        if (email === "admin" && password === "admintest") { navigate("/user"); } 
+        if (email === "ozge" && password === "ozge") { navigate("/user"); } 
+        if (email === "ozge" && password === "ozge") {
+            sessionStorage.setItem("userName", email);
+            navigate("/user");
+          }
         else if (userRegistrationData && email === userRegistrationData.emailAddress && password === userRegistrationData.createPassword) {navigate("/user");}
         else {
             alert("Invalid email or password");

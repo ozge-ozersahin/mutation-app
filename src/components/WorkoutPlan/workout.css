@@ -28,3 +28,37 @@ p {
 .image:active {
     transform: scale(1.05) rotate(5deg);
 }
+.workout-container {
+    padding: 20px;
+  }
+  
+  /* Dropdown menu container */
+  .dropdown-menu {
+    margin: 20px 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Style for dropdown buttons */
+  .dropdown-menu button {
+    padding: 10px 20px;
+    background-color: #a8a500;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Active button and hover effect */
+  .dropdown-menu button.active,
+  .dropdown-menu button:hover {
+    background-color: #b8ad09;
+  }
+  
+  /* Optional: Style for the exercise sections */
+  .exercise-section {
+    margin-top: 20px;
+  }
+  
